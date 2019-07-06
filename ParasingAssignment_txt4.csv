@@ -1,0 +1,101 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter A File Namesample_tjext_file.txt4\n",
+      "sample_tjext_file.txt4\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(input('Enter A File Name'))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def counts(filename):\n",
+    "    \"\"\"Count the approximate number of words in a file.\"\"\"\n",
+    "    try:\n",
+    "        with open(filename, encoding ='utf8') as f_obj:\n",
+    "            contents = f_obj.read()\n",
+    "    except FileNotFoundError:\n",
+    "        msg = \"Sorry, the file \" + filename + \" does not exist.\"\n",
+    "        print(msg)\n",
+    "    else:\n",
+    "        words = len(contents.split())\n",
+    "        lines = len(contents.splitlines())\n",
+    "        non_space_character = len(contents.split(\" \"))\n",
+    "        space_count = sum(x.isspace() for x in contents);\n",
+    "        tab = len(contents.split('\\t'))\n",
+    "        paragraph = len(contents.split('\\n\\n'))\n",
+    "        print(\"The file \" + filename + \" has about \" + str(words) + \" words.\")\n",
+    "        print(\"The file \" + filename + \" has about \" + str(lines) + \" lines.\")\n",
+    "        print(\"The file \" + filename + \" has about \" + str(non_space_character) + \" Non-Space Character.\")\n",
+    "        print(\"The file \" + filename + \" has about \" + str(space_count) + \" Space Count.\")\n",
+    "        print(\"The file \" + filename + \" has about \" + str(tab) + \" Tabs. \")\n",
+    "        print(\"The file \" + filename + \" has about \" + str(paragraph) + \" Paragraph.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The file sample_text_file.txt4 has about 38128 words.\n",
+      "The file sample_text_file.txt4 has about 4821 lines.\n",
+      "The file sample_text_file.txt4 has about 54321 Non-Space Character.\n",
+      "The file sample_text_file.txt4 has about 59175 Space Count.\n",
+      "The file sample_text_file.txt4 has about 35 Tabs. \n",
+      "The file sample_text_file.txt4 has about 1 Paragraph.\n"
+     ]
+    }
+   ],
+   "source": [
+    "counts('sample_text_file.txt4') "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.1"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
