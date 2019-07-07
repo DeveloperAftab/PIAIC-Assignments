@@ -9,11 +9,11 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Enter your Marks : Math    : 80\n",
-      "Enter your Marks : English : 85\n",
-      "Enter your Marks : Urdu    : 84\n",
-      "Enter your Marks : Physics : 81\n",
-      "Enter your Marks : Chemistry : 86\n"
+      "Enter your Marks : Math    : 96\n",
+      "Enter your Marks : English : 95\n",
+      "Enter your Marks : Urdu    : 99\n",
+      "Enter your Marks : Physics : 69\n",
+      "Enter your Marks : Chemistry : 78\n"
      ]
     }
    ],
@@ -52,13 +52,13 @@
       "\n",
       "\n",
       "SUBJECTS\t\tOBTAINED\tTOTAL Marks\n",
-      "Math    \t\t 80.0 \t\t 100\n",
-      "English \t\t 85.0 \t\t 100\n",
-      "Urdu    \t\t 84.0 \t\t 100\n",
-      "Physics \t\t 81.0 \t\t 100\n",
-      "Chemistry \t\t 86.0 \t\t 100\n",
+      "Math    \t\t 96.0 \t\t 100\n",
+      "English \t\t 95.0 \t\t 100\n",
+      "Urdu    \t\t 99.0 \t\t 100\n",
+      "Physics \t\t 69.0 \t\t 100\n",
+      "Chemistry \t\t 78.0 \t\t 100\n",
       "\n",
-      "Your Total Marks Obtained are 416.0 and your Grade is A \n"
+      "Your Total Marks Obtained are 437.0 and your Grade is A \n"
      ]
     }
    ],
